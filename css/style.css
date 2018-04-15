@@ -1,0 +1,155 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* General Styling */
+
+html, body {
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+a:link, a:visited {
+	color: #000;
+}
+a:active, a:hover {
+	text-decoration: none;
+}
+.center {
+	text-align: center;
+}
+.tmid { /* Center block-level elements */
+	margin: 0px auto;
+}
+.fullpage {
+	width: 100%;
+	height: 100%;
+}
+.vcenter {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Page Styling */
+
+.content {
+	width: calc(100% - 80px);
+	max-width: 900px;
+	min-height: calc(100% - 130px);
+	margin: 40px auto;
+}
+.content h1 {
+	margin: 50px;
+}
+.content h2 {
+	margin-top: 30px;
+}
+.button {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+	background-color: #393939;
+}
+.spacer {
+	height: 10px;
+}
+.dropdowntoggle {
+	width: 100%;
+	padding: 20px;
+	margin: 10px;
+	margin-bottom: 0;
+	border: 3px solid #befedf;
+	border-bottom: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.dropdown {
+	width: 100%;
+	padding: 20px;
+	margin: 10px;
+	margin-top: 0;
+	border: 3px solid #befedf;
+	border-top: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.dropdowntoggle h2, .dropdown p, .dropdown h3 {
+	margin: 0;
+}
+
+/* Menu Bar */
+
+.menubarwrap {
+	text-align: center; /* center inline-block (menubar) */
+	background-color: #34eb92;
+	width: 100%;
+}
+.menubar {
+	display: inline-block;
+	font-size: 0; /* remove space between inline divs */
+	background-color: #34eb92;
+	min-height: 50px;
+}
+.menubar a {
+	text-decoration: none;
+}
+.menubaritem {
+	text-align: center;
+	line-height: 50px;
+	background-color: #befedf;
+	height: 50px;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 8px;
+	margin-right: 8px;
+	-webkit-transition: all .15s;
+	transition: all .15s;
+}
+.menubaritem p {
+	margin: 0;
+}
+a .menubaritem {
+	color: #000;
+	font-size: initial; /* remove space between inline divs */
+}
+.menubaritemcurrent, .menubaritem:hover {
+	background-color: #51635b;
+}
+a .menubaritemcurrent, .menubaritem:hover {
+	color: #fff;
+}
+@media (max-width: 1000px) {
+	.menubar {
+		display: block;
+	}
+	.menubaritem {
+		width: 100%;
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* Footer */
+
+.footer {
+	color: #fff;
+	background-color: #1d1d1d;
+	width: calc(100% - 60px);
+	padding: 30px;
+}
+.footer a {
+	color: #fff;
+}
+.footer p {
+	display: inline-block;
+}
+.footerright {
+	position: absolute;
+	right: 30px;
+}
