@@ -5,7 +5,7 @@ window.onload = function(e) {
 }
 
 function fixMenuBar() {
-	if (window.innerWidth > 1000) {
+	if (window.innerWidth > 1005) {
 		toggleMenuBar(true);
 	}
 	else {
