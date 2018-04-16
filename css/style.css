@@ -18,8 +18,9 @@ a:active, a:hover {
 }
 img {
 	margin: 20px;
-	width: calc(100% - 40px);
 	display: block;
+	width: calc(100% - 40px);
+	object-fit: scale-down;
 }
 .center {
 	text-align: center;
